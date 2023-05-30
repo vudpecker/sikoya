@@ -17,4 +17,4 @@ print(['Hello', 'Nick', 'welcome'][2])
 print(len(['Hello', 'Nick', 'welcome'][2]))
 
 #print python version
-print(sys.version.split()[0])
+print(sys.version.split())
