@@ -7,4 +7,6 @@ stud_name = "Jake" # pylint: disable=C0103
 message = "%s is 16 yrs old" # pylint: disable=C0103
 print(message%stud_name)
 message="%s is %d yrs old" # pylint: disable=C0103
-print(message%("Phil",18))
+print(message%("Phil",14))
+
+print("Person's name is %s, and age is %d","Sam",21)
