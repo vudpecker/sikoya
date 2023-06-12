@@ -36,8 +36,8 @@ except ValueError:
 t = ["Rock", "Paper", "Scissors"]
 
 computer = t[randint(0,2)]
-
-player = input("Rock, Paper, Scissors?")
+#player = input("Rock, Paper, Scissors?")
+player = "Rock" #as of now a static value
 
 if player == computer:
     print("Tie!")
@@ -49,3 +49,13 @@ for i in n:
     if i % 2 == 0:
         sum += i
 print (sum)
+
+try:
+    if sum - 1 == 0:
+        assert False
+except SyntaxError:
+    pass
+
+assert sum + 1 == 5, 'greater than five'
+
+print(sum - 1)
