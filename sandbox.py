@@ -34,12 +34,18 @@ except ValueError:
 """
 
 t = ["Rock", "Paper", "Scissors"]
-computer = t[randint(0,2)]
-#player = input("Rock, Paper, Scissors?")
-#if player == computer:
-#    print("Tie!")
-#print(player)
 
-n = [0, 2, 3, 4,5, 6]
+computer = t[randint(0,2)]
+
+player = input("Rock, Paper, Scissors?")
+
+if player == computer:
+    print("Tie!")
+print(player)
+
+n = [0, 2, 3, 4, 5, 6]
+sum = 0
 for i in n:
-    print (i % 2)
+    if i % 2 == 0:
+        sum += i
+print (sum)
