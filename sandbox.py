@@ -32,3 +32,14 @@ try:
 except ValueError:
     pass
 """
+
+t = ["Rock", "Paper", "Scissors"]
+computer = t[randint(0,2)]
+#player = input("Rock, Paper, Scissors?")
+#if player == computer:
+#    print("Tie!")
+#print(player)
+
+n = [0, 2, 3, 4,5, 6]
+for i in n:
+    print (i % 2)
