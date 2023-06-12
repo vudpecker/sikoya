@@ -18,20 +18,17 @@ else:
 
 string = "liril"
 
-#to lower
+#To lower
 string = string.lower().replace(" ", "")
 
-"string reverse"
+# string reverse
 string1 = string[::-1]
 print(string1)
 
-t = ["Rock", "Paper", "Scissors"]
-computer = t[randint(0,2)]
-#player = input("Rock, Paper, Scissors?")
-#if player == computer:
-#    print("Tie!")
-#print(player)
-
-n = [0, 2, 3, 4,5, 6]
-for i in n:
-    print (i % 2)
+"""
+try:
+    factorial(-1)
+    assert False  # This line should not be reached
+except ValueError:
+    pass
+"""
