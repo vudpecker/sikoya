@@ -20,9 +20,17 @@ print(type(WIDTH))
 
 string = "liril"
 
-#to lower
+#To lower
 string = string.lower().replace(" ", "")
 
-"string reverse"
+# string reverse
 string1 = string[::-1]
 print(string1)
+
+"""
+try:
+    factorial(-1)
+    assert False  # This line should not be reached
+except ValueError:
+    pass
+"""
