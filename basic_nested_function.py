@@ -1,3 +1,5 @@
+"""Nested function"""
+
 def outer(x):
     def inner(y):
         return x + y
