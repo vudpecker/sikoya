@@ -1,6 +1,9 @@
 
 import unittest
 
+class StringListOnly(self):
+    
+
 class TestCaseCollections(unittest.TestCase):
 
     def test_append_string(self):
