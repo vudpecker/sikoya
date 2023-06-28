@@ -42,3 +42,22 @@ print(new_text.lower())
 headers = 'ProductID,ProductName,Category,Price'
 header_list = headers.split(",")
 print(header_list)
+
+str = "Hello!Welcome to Tutorialspoint.";
+suffix = "oint.";
+result=str.endswith(suffix, 27)
+print("The input string ends with the given suffix:",result)
+result=str.endswith(suffix, 28)
+print("The input string ends with the given suffix:",result)
+
+#Split attribute of string
+print("Hello:Nick:welcome".split(":")[1])
+print('Hello Nick welcome'.split())
+#Array or List
+print(['Hello', 'Nick', 'welcome'][2])
+print(len(['Hello', 'Nick', 'welcome'][2]))
+
+text = """Python is a general-purpose language.
+Python is popular."""
+
+print(text.splitlines())
