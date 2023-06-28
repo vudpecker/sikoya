@@ -28,3 +28,17 @@ path2 = (
 
 print(f"path1: {path1.find('scientist')}")
 print(f"path2: {path2.find('scientist')}")
+
+
+
+code1 = 'FVNISJND-20'
+print(f"code1: {code1.isalnum()}")
+
+text = '      100 Days of Code   '
+new_text = text.strip() # Trim the string
+#print(text.lower())
+print(new_text.lower())
+
+headers = 'ProductID,ProductName,Category,Price'
+header_list = headers.split(",")
+print(header_list)
