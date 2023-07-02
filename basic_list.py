@@ -27,3 +27,12 @@ squares=['red', 'yellow', 'green', 'purple', 'blue']
 for i, square in enumerate(squares):
     print(i, square)
     
+test_str = "geeksforgeeks is best for geeks"
+repl_char = "*"
+
+res = "".join(repl_char for idx, chr in enumerate(test_str))
+#res = "".join(repl_char while len(test_str))
+print("The string after performing replace : " + res)
+
+
+print("This is {:+=10}.".format(10))
