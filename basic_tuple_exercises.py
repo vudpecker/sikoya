@@ -16,9 +16,11 @@ print(stocks[0][1][0])
 
 info = (('Monica', 19), ('Tom', 21), ('John', 18))
 
-asc = tuple(sorted(info, key=lambda item: item[1]))
-desc = tuple(sorted(info, key=lambda item: item[1], reverse=True))
+asce = tuple(sorted(info, key = lambda elem: elem[1]))
+desc = tuple(sorted(info, key = lambda elem: elem[1], reverse=True))
  
- 
-print(f'Ascending: {asc}')
+print(f'Ascending: {asce}')
 print(f'Descending: {desc}')
+
+x = lambda a, b : a * b
+print(x(5, 6))
