@@ -16,7 +16,8 @@ print(stocks[0][1][0])
 
 info = (('Monica', 19), ('Tom', 21), ('John', 18))
 
-asce = tuple(sorted(info, key = lambda elem: elem[1]))
+asce = sorted(info, key = lambda elem: elem[1]) # returns list TODO needs to be type casted
+
 desc = tuple(sorted(info, key = lambda elem: elem[1], reverse=True))
  
 print(f'Ascending: {asce}')
