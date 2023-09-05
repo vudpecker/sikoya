@@ -27,7 +27,7 @@ class Laptop:
  
     def __init__(self, brand, model, price):
         self.brand = brand
-        self._model = model
+        self._model = model # protected
         self.__price = price
  
  
