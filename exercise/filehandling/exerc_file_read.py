@@ -3,15 +3,21 @@
 from pathlib import Path
 
 
-path =  Path('..\..\pi_value.txt') # if relative path ..\..\pi_value.txt possible?
+path =  Path('pi_value.txt') # if relative path ..\..\pi_value.txt possible?
 
-try:
-    contents = path.read_text()
+def print_path(path):
+        
 
-except FileNotFoundError:
-    print(f"The file {path} does not exist")
-    #pass #fail silently!
+    try:
+        contents = path.read_text()
 
-else:    
-    print(contents.rsplit())
+    except FileNotFoundError:
+        print(f"The file {path} does not exist")
+        #pass #fail silently!
 
+    else:    
+        print(contents.rsplit())
+
+if __name__ == '__main__':
+    print("printing the patch...")
+    print_path(path)
