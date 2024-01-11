@@ -30,3 +30,7 @@ def test_generate_password():
 
 def invok_pass():
     pass
+
+if __name__ == "__main__":
+    test_generate_password()
+

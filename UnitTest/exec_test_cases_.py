@@ -1,9 +1,13 @@
 
 import unittest
 
-class StringListOnly(self):
-    
-    
+class StringListOnly():
+    """This class takes in string and adds it to the
+    existing list!
+    """
+
+    def append(self,elem):
+        pass
 
 class TestCaseCollections(unittest.TestCase):
 

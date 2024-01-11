@@ -39,4 +39,6 @@ def test_generate_password():
     assert any(c.isdigit() for c in password)
     assert any(c in string.punctuation for c in password)
 
+if __name__ == "__main__":
+    test_generate_password()
 
