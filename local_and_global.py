@@ -16,5 +16,5 @@ def myfunc():
     num = 20
     print('Locals:', locals())
     print('Globals:', globals())
-myfunc()
+#myfunc()
 
