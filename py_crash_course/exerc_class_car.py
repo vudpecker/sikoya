@@ -4,7 +4,7 @@ class CarWithPrice:
         self.brand = brand
         self.model = model
         self.price = price
-        self.type_of_car = type_of_car if type_of_car else 'sedan'
+        self.type_of_car = type_of_car if type_of_car else "sedan"
 
     def read_odometer(self):
         print(f"The car has rum {self.odometer_reading} miles on it.")
@@ -19,11 +19,11 @@ class CarWithPrice:
         self.odometer_reading += miles
 
 
-# new_car = Car("opel", "Insignia", 115000, "hatch back")  # will be called in the inherited classes
-# print(new_car.__dict__)
 
+new_car = CarWithPrice("opel", "Insignia", 115000, "hatch back")  # will be called in the inherited classes
 
-# print(new_car.__class__)
+print(new_car.__dict__)
+print(new_car.__class__)
 
 
 class Car:
@@ -45,3 +45,6 @@ class Car:
 
     def increment_odometer(self, miles):
         self.odometer_reading += miles
+
+
+
