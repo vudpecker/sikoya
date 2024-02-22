@@ -1,10 +1,10 @@
 from random import randint
-
-ch = randint("l", "y")
+"""
+ch = randint(ord("l"), ord("y"))  # ASCII code for "l" and "y"
 
 print(f"Choice :{ch}")
 
-"""
+
 players = ['charles','asif','anwar','karam','vinod','vijay','muru','raja','yash','will','sundar']
 
 for payer in players[2:6]:
@@ -16,6 +16,7 @@ print(f"The first three elements are:{players[:3]}")
 length = len(players)
 print(length)
 
+"""
 
 #Range
 numbers = list[range(1,10)]
@@ -27,7 +28,7 @@ random = [(2, 2), (3, 4), (1, 1), (4, 1), (1, 3)]
 random.sort(reverse=True)
 
 
-
+"""
 old_player_list = sorted(players,reverse=True)
 
 old_player_list.insert(4,'john')
