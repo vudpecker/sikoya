@@ -8,6 +8,7 @@ class Die:
     def roll(self):
         return randint(1, self.num_of_sides)
 
+
 my_die = Die(12) # Dynamic
 
 results = []
