@@ -1,4 +1,4 @@
-
+"""nested list"""
 
 students = []
 for _ in range(int(input())):
@@ -7,6 +7,7 @@ for _ in range(int(input())):
     student_record = {"name": name, "score": score}
     students.append(student_record)
 
+#grades = [student["score"] for student in students]
 grades = set([student["score"] for student in students])
 
 if len(grades) == 1:
@@ -17,7 +18,6 @@ sorted_grades = sorted([student["score"] for student in students])
 
 # Find the second-lowest grade (ignoring the lowest)
 second_lowest_grade = sorted_grades[1] if len(sorted_grades) > 1 else None
-
 
 # Find students with the second-lowest grade
 second_lowest_students = [
