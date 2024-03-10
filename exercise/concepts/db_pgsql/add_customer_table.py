@@ -5,7 +5,7 @@ def connect_to_db():
     cursor = connection.cursor()
     
     create_schema = "CREATE schema customer"
-    cursor.execute(create_schema)
+    #cursor.execute(create_schema)
 
     
     create_cust_table = """CREATE TABLE customers (customer_id SERIAL PRIMARY KEY,
@@ -13,7 +13,7 @@ def connect_to_db():
                                             last_name VARCHAR(50) NOT NULL,
                                             email VARCHAR(100) UNIQUE);"""
     
-    cursor.execute(create_cust_table)
+    #cursor.execute(create_cust_table)
     
 
     insert_record = """INSERT INTO customers (first_name, last_name, email, country)
@@ -29,14 +29,14 @@ def connect_to_db():
     #               "VALUES (%s, %s, %s, %s)"
 
 
-    cursor.executemany(insert_record,records_to_insert)
+    #cursor.executemany(insert_record,records_to_insert)
 
     #select_query = "SELECT * FROM Customers"\
     #               "WHERE customer_id = 2;"
     select_query = "select * from Customers"
     cursor.execute(select_query)
 
-    print(cursor.fetchall())    
+    return (cursor.fetchall())    
           
 
-connect_to_db()
+print(connect_to_db())

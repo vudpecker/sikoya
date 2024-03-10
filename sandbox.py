@@ -59,3 +59,14 @@ except SyntaxError:
 assert sum + 1 == 5, 'greater than five'
 
 print(sum - 1)
+
+
+def factorial(n):
+  if n == 0:
+    return 1
+  else:
+    return n * factorial(n - 1)
+print(factorial(5))
+
+name = input('what is your name?\n')
+print('Hi, %s.' % name)
