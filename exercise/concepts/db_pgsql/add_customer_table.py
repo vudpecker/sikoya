@@ -23,15 +23,13 @@ def connect_to_db():
         ("Jackey", "Chan", "Jackey.Chan@hollywood.com", "USA"),
         ("Rajini", "Kanth", "Rajini.Kanth@hollywood.com", "INDIA"),
 
-]
+    ]
 
-    cursor.execute(create_pipeline_table)
-
-    insert_query = "INSERT INTO customers (first_name, last_name, email, country)"\
-                   "VALUES (%s, %s, %s, %s)"
+    #insert_query = "INSERT INTO customers (first_name, last_name, email, country)"\
+    #               "VALUES (%s, %s, %s, %s)"
 
 
-    cursor.executemany(insert_query,records_to_insert)
+    cursor.executemany(insert_record,records_to_insert)
 
     #select_query = "SELECT * FROM Customers"\
     #               "WHERE customer_id = 2;"
